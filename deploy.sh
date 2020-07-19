@@ -1,6 +1,7 @@
 docker build -t vinothkumar1selvaraj/multi-client:latest -t vinothkumar1selvaraj/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t vinothkumar1selvaraj/multi-server:latest -t vinothkumar1selvaraj/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t vinothkumar1selvaraj/multi-worker:latest -t vinothkumar1selvaraj/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+
 docker push vinothkumar1selvaraj/multi-client:latest
 docker pust vinothkumar1selvaraj/multi-server:latest
 docker push vinothkumar1selvaraj/multi-worker:latest
